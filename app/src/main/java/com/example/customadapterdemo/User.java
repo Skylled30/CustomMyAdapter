@@ -12,21 +12,27 @@ public class User {
         this.sex = sex;
     }
 
-    public static final Comparator<User> SEX_NAME_PHONE_NUMBER_COMPARATOR = new Comparator<User>() {
+    //сравниваем по полу
+    public static final Comparator<User> SEX_COMPARATOR = new Comparator<User>() {
         @Override
         public int compare(User o1, User o2) {
-            //сравниваем полы
-            int result = o1.getSex().compareTo(o2.getSex());
-            if(result != 0){
-                return result;
-            }
-            //сравниваем по имени
-            result = o1.getName().compareTo(o2.getName());
-            if(result != 0){
-                return result;
-            }
-            //сравниваем по номеру
+            return o1.getSex().compareTo(o2.getSex());
+        }
+    };
+
+    //сравниваем по номеру
+    public static final Comparator<User> PHONE_NUMBER_COMPARATOR = new Comparator<User>() {
+        @Override
+        public int compare(User o1, User o2) {
             return o1.getPhoneNumber().compareTo(o2.getPhoneNumber());
+        }
+    };
+
+    //сравниваем по имени
+    public static final Comparator<User> NAME_COMPARATOR = new Comparator<User>() {
+        @Override
+        public int compare(User o1, User o2) {
+            return o1.getName().compareTo(o2.getName());
         }
     };
 

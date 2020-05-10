@@ -24,8 +24,19 @@ public class UserListAdapter extends BaseAdapter {
     public UserListAdapter(Context ctx, ArrayList<User> users) {
         this.ctx = ctx;
         this.users = users;
-        //сортировка по каждому полю
-        Collections.sort(users, User.SEX_NAME_PHONE_NUMBER_COMPARATOR);
+    }
+
+    public void sort_data(String s){
+        switch (s){
+            case "sex":
+                Collections.sort(users, User.SEX_COMPARATOR);
+                break;
+            case "phone":
+                Collections.sort(users, User.PHONE_NUMBER_COMPARATOR);
+                break;
+            case "name":
+                Collections.sort(users, User.NAME_COMPARATOR);
+        }
     }
 
     @Override
