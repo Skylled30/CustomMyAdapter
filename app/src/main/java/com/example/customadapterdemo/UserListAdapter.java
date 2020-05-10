@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Date;
 
 public class UserListAdapter extends BaseAdapter {
@@ -22,6 +24,8 @@ public class UserListAdapter extends BaseAdapter {
     public UserListAdapter(Context ctx, ArrayList<User> users) {
         this.ctx = ctx;
         this.users = users;
+        //сортировка по каждому полю
+        Collections.sort(users, User.SEX_NAME_PHONE_NUMBER_COMPARATOR);
     }
 
     @Override
@@ -71,4 +75,5 @@ public class UserListAdapter extends BaseAdapter {
         Log.d("mytag", "getView time: "+(finish.getTime()-begin.getTime()));
         return convertView;
     }
+
 }

@@ -1,0 +1,169 @@
+{
+	"total": 32,
+	"users":
+	[
+		{
+			"name": "Petya",
+			"phoneNumber": "89041253164",
+			"sex": "MAN"
+		},
+		{
+			"name": "Roma",
+			"phoneNumber": "89027582273",
+			"sex": "MAN"
+		},
+		{
+			"name": "Roma",
+			"phoneNumber": "89645219392",
+			"sex": "MAN"
+		},
+		{
+			"name": "Andrew",
+			"phoneNumber": "89528219572",
+			"sex": "MAN"
+		},
+		{
+			"name": "Andrew",
+			"phoneNumber": "89021213264",
+			"sex": "MAN"
+		},
+		{
+			"name": "Vasya",
+			"phoneNumber": "89015734288",
+			"sex": "MAN"
+		},
+		{
+			"name": "Roma",
+			"phoneNumber": "89057172527",
+			"sex": "MAN"
+		},
+		{
+			"name": "Vasya",
+			"phoneNumber": "89641828247",
+			"sex": "MAN"
+		},
+		{
+			"name": "Valya",
+			"phoneNumber": "89015127837",
+			"sex": "WOMAN"
+		},
+		{
+			"name": "Anna",
+			"phoneNumber": "89648217897",
+			"sex": "WOMAN"
+		},
+		{
+			"name": "Inga",
+			"phoneNumber": "89001726364",
+			"sex": "WOMAN"
+		},
+		{
+			"name": "Anna",
+			"phoneNumber": "89529317245",
+			"sex": "WOMAN"
+		},
+		{
+			"name": "UFO",
+			"phoneNumber": "8967814672",
+			"sex": "UNKNOWN"
+		},
+		{
+			"name": "UFO",
+			"phoneNumber": "8901257872",
+			"sex": "UNKNOWN"
+		},
+		{
+			"name": "UFO",
+			"phoneNumber": "8902987231",
+			"sex": "UNKNOWN"
+		},
+		{
+			"name": "UFO",
+			"phoneNumber": "8964757821",
+			"sex": "UNKNOWN"
+		},
+		{
+			"name": "Petya",
+			"phoneNumber": "89041253164",
+			"sex": "MAN"
+		},
+		{
+			"name": "Roma",
+			"phoneNumber": "89027582273",
+			"sex": "MAN"
+		},
+		{
+			"name": "Roma",
+			"phoneNumber": "89645219392",
+			"sex": "MAN"
+		},
+		{
+			"name": "Andrew",
+			"phoneNumber": "89528219572",
+			"sex": "MAN"
+		},
+		{
+			"name": "Andrew",
+			"phoneNumber": "89021213264",
+			"sex": "MAN"
+		},
+		{
+			"name": "Vasya",
+			"phoneNumber": "89015734288",
+			"sex": "MAN"
+		},
+		{
+			"name": "Roma",
+			"phoneNumber": "89057172527",
+			"sex": "MAN"
+		},
+		{
+			"name": "Vasya",
+			"phoneNumber": "89641828247",
+			"sex": "MAN"
+		},
+		{
+			"name": "Valya",
+			"phoneNumber": "89015127837",
+			"sex": "WOMAN"
+		},
+		{
+			"name": "Anna",
+			"phoneNumber": "89648217897",
+			"sex": "WOMAN"
+		},
+		{
+			"name": "Inga",
+			"phoneNumber": "89001726364",
+			"sex": "WOMAN"
+		},
+		{
+			"name": "Anna",
+			"phoneNumber": "89529317245",
+			"sex": "WOMAN"
+		},
+		{
+			"name": "UFO",
+			"phoneNumber": "8967814672",
+			"sex": "UNKNOWN"
+		},
+		{
+			"name": "UFO",
+			"phoneNumber": "8901257872",
+			"sex": "UNKNOWN"
+		},
+		{
+			"name": "UFO",
+			"phoneNumber": "8902987231",
+			"sex": "UNKNOWN"
+		},
+		{
+			"name": "UFO",
+			"phoneNumber": "8964757821",
+			"sex": "UNKNOWN"
+		}
+	]
+}
+
+
+

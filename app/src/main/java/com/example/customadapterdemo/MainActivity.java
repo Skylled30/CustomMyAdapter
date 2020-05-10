@@ -3,8 +3,13 @@ package com.example.customadapterdemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 
+import com.google.gson.Gson;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,16 +26,23 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: реализовать загрузку данных из JSON-файла
         // который загрузить в папку assets
-
-        for (int i = 0; i < 10; i++) {
-            users.add(new User("Petya", "123", Sex.MAN));
-            users.add(new User("Vasya", "234", Sex.MAN));
-            users.add(new User("Valya", "456", Sex.WOMAN));
-            users.add(new User("UFO", "@@@", Sex.UNKNOWN));
+        String text = "data.json";
+        byte[] buffer = null;
+        InputStream is;
+        try {
+            is = getAssets().open(text);
+            int size = is.available();
+            buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        String str_data = new String(buffer);
+        Gson gson = new Gson();
+        Data data = gson.fromJson(str_data, Data.class);
 
-
-        adapter = new UserListAdapter(this, users);
+        adapter = new UserListAdapter(this, data.users);
 
         listView.setAdapter(adapter);
     }
